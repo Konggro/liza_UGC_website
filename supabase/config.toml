@@ -1,0 +1,7 @@
+# Minimal Supabase CLI config. Run `supabase link --project-ref <ref>` to connect.
+project_id = "portfolio-website-for-influencer"
+
+[functions.make-server-675548e5]
+# Supabase's JWT gate is off because new sb_publishable_ keys are not JWTs;
+# the function checks admin auth itself (requireAuth + ADMIN_EMAILS).
+verify_jwt = false
